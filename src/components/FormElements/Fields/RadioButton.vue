@@ -1,5 +1,6 @@
 <template>
   <div>
+    <img :src="getNameImg(props.field.options.img)"/>
     <label v-for="(option, key) in props.field.options.choices" :key="key">
       <input
         v-model="selectedValue"
@@ -46,4 +47,18 @@ const props = defineProps({
 });
 
 const { selectedValue } = useFormField(props);
+
+
+function getNameImg(idImg){
+
+  return "src/assets/img/texturas/" + idImg + ".png"
+
+}
 </script>
+
+<style>
+img {
+  max-width: 100%;
+  height: auto;
+}
+</style>

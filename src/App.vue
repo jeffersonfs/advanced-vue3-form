@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <div class="title">
-      <h1>Advanced <span> Vue 3 </span> Form</h1>
+      <h1>Qual a melhor <span> textura</span> ? </h1>
+
     </div>
     <VueForm :formConfig="formConfig" />
   </div>

@@ -20,7 +20,9 @@ const VueForm = (props) => {
   });
 
   const formFields = props.formConfig.map((field) => {
-    let component = getComponent(field.type);
+    let type = field.type
+
+    let component = getComponent(type);
     return { ...field, component };
   });
 
